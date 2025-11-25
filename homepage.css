@@ -60,8 +60,8 @@ h2{
 .hero-banner,
 .hero-image {
   width: 100%;
-  max-width: 1600px; /* optional cap */
-  height: auto;      /* lets the image scale with the browser width */
+  max-width: 1600px;
+  height: auto;
   display: block;
   object-fit: cover; /* useful when images are constrained inside a fixed box */
   margin: 0 auto;
