@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/graphics/fonts/Recoleta-RegularDEMO.woff2') format('woff2'),
+        url('/graphics/fonts/Recoleta-RegularDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    background-color: #f3f8f2;
+}
+.Logo
+{
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    justify-items: center;
+    align-items: center;
+    padding: 24px;
+    color:white;
+    font-size: 32px;
+    text-align: center;
+    background: #00723B;
+    font-family: 'Recoleta', sans-serif;
+}
+.navbar {
+  background-color: #f3f8f2;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #00723B;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.navbar a.active,
+.navbar a:hover {
+  background-color: #d5f0d1;
+  color:#00723B;
+}
+h2{
+    font-family: 'Recoleta', sans-serif;
+}
+.hero-content{
+    text-align: center;
+    padding: 20px 0px;
+    margin: 10px;
+}
+.hero-banner,
+.hero-image {
+  width: 100%;
+  max-width: 1600px; /* optional cap */
+  height: auto;      /* lets the image scale with the browser width */
+  display: block;
+  object-fit: cover; /* useful when images are constrained inside a fixed box */
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.gallery
+{
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  max-width: 1000px; 
+  margin: 1.25rem auto;
+  padding: 0 10px;
+}
+.gallery img
+{
+  width:100%;
+  height:300px;
+  object-fit: cover;
+  display:block;
+  border-radius:8px;
+}
+footer {
+  background-color: #f3f8f2;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

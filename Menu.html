@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Community Café</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <h1>Community Bar & Cafe</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Visit_us.html">Visit us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="menu">
+        <section class="menu-container">
+            <h2>Our Menus</h2>
+            <p class="intro">Tap an image to view a larger menu.</p>
+
+            <div class="menu-grid">
+                <a class="menu-card" href="#m-beverages" aria-describedby="bev-caption">
+                    <img src="graphics/menu-beverages.jpg" alt="Beverages menu — coffee & frappe">
+                    <h3>Beverages — Coffee & Frappe</h3>
+                </a>
+
+                <a class="menu-card" href="#m-medium" aria-describedby="med-caption">
+                    <img src="graphics/menu-medium-roast.jpg" alt="Medium roast series menu">
+                    <h3>Medium Roast Series</h3>
+                </a>
+
+                <a class="menu-card" href="#m-cocktails" aria-describedby="cock-caption">
+                    <img src="graphics/menu-cocktails.jpg" alt="Cocktail and bar menu">
+                    <h3>Cocktails & Bar</h3>
+                </a>
+
+                <a class="menu-card" href="#m-food" aria-describedby="food-caption">
+                    <img src="graphics/menu-food.jpg" alt="Food menu">
+                    <h3>Food Menu</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--ightboxes-->
+    <div id="m-beverages" class="overlay" role="dialog" aria-hidden="true" aria-label="Beverages menu">
+        <div class="overlay-inner">
+            <a class="overlay-close" href="#menu" aria-label="Close">✕</a>
+            <img src="graphics/menu-beverages.jpg" alt="Beverages menu — coffee & frappe">
+            <p id="bev-caption" class="overlay-caption">Beverages — Coffee & Frappe</p>
+        </div>
+    </div>
+
+    <div id="m-medium" class="overlay" role="dialog" aria-hidden="true" aria-label="Medium roast series menu">
+        <div class="overlay-inner">
+            <a class="overlay-close" href="#menu" aria-label="Close">✕</a>
+            <img src="graphics/menu-medium-roast.jpg" alt="Medium roast series menu">
+            <p id="med-caption" class="overlay-caption">Medium Roast Series</p>
+        </div>
+    </div>
+
+    <div id="m-cocktails" class="overlay" role="dialog" aria-hidden="true" aria-label="Cocktails and bar menu">
+        <div class="overlay-inner">
+            <a class="overlay-close" href="#menu" aria-label="Close">✕</a>
+            <img src="graphics/menu-cocktails.jpg" alt="Cocktails and bar menu">
+            <p id="cock-caption" class="overlay-caption">Cocktails & Bar</p>
+        </div>
+    </div>
+
+    <div id="m-food" class="overlay" role="dialog" aria-hidden="true" aria-label="Food menu">
+        <div class="overlay-inner">
+            <a class="overlay-close" href="#menu" aria-label="Close">✕</a>
+            <img src="graphics/menu-food.jpg" alt="Food menu">
+            <p id="food-caption" class="overlay-caption">Food Menu</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Community Bar & Café | Your All-Day Hangout</p>
+    </footer>
+</body>
+
+</html>

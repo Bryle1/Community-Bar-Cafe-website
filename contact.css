@@ -1,10 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/graphics/fonts/Recoleta-RegularDEMO.woff2') format('woff2'),
+        url('/graphics/fonts/Recoleta-RegularDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
+body
+{
+    background-color: #f3f8f2;
+}
+.Logo
+{
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    justify-items: center;
+    align-items: center;
+    padding: 24px;
+    color:white;
+    font-size: 32px;
+    text-align: center;
+    background: #00723B;
+    font-family: 'Recoleta', sans-serif;
+}
 .navbar {
   background-color: #f3f8f2;
   padding: 1rem 0;
@@ -20,7 +38,7 @@
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #00723B;
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 20px;
@@ -30,12 +48,12 @@
 .navbar a.active,
 .navbar a:hover {
   background-color: #d5f0d1;
-  color: #000;
+  color:#00723B;
 }
 
 .contact-section {
-  background-color: #205c3b;
-  color: #fff;
+  background-color: #00723B;
+  color: #f3f8f2;
   padding: 3rem 1rem;
   text-align: center;
 }
@@ -64,7 +82,7 @@
 }
 
 .form-container h2 {
-  color: #205c3b;
+  color: #00723B;
   margin-bottom: 5px;
 }
 
@@ -88,7 +106,7 @@ input, textarea {
 }
 
 button {
-  background-color: #2f8144;
+  background-color: #00723B;
   color: white;
   border: none;
   padding: 10px;
