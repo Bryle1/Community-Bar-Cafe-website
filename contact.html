@@ -32,10 +32,13 @@
     <div class="form-container">
       <h2>Inquiry Form</h2>
       <p>For general questions and feedback</p>
-      <form>
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <textarea placeholder="Your Message" rows="4" required></textarea>
+      <form action="https://formspree.io/f/xrbwyggg" method="POST">
+        <input name="name" type="text" placeholder="Full Name" required />
+        <input name="email" type="email" placeholder="Email Address" required />
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <input type="hidden" name="_subject" value="Website Inquiry — Community Bar & Cafe" />
+        <!-- honeypot to reduce spam -->
+        <input type="text" name="_gotcha" style="display:none" />
         <button type="submit">Send Inquiry</button>
       </form>
     </div>
@@ -43,24 +46,15 @@
     <div class="form-container">
       <h2>Reservation Form</h2>
       <p>Book your hangout spot with us</p>
-      <form>
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="date" required />
-        <input type="time" required />
-        <input type="number" placeholder="Number of Guests" required />
+      <form action="https://formspree.io/f/xrbwyggg" method="POST">
+        <input name="name" type="text" placeholder="Full Name" required />
+        <input name="email" type="email" placeholder="Email Address" required />
+        <input name="date" type="date" name="date" required />
+        <input name="time" type="time" name="time" required />
+        <input name="guests" type="number" placeholder="Number of Guests" required />
+        <input type="hidden" name="_subject" value="Reservation Request — Community Bar & Cafe" />
+        <input type="text" name="_gotcha" style="display:none" />
         <button type="submit">Reserve Now</button>
-      </form>
-    </div>
-
-    <div class="form-container">
-      <h2>Support Inquiries</h2>
-      <p>Need help? Our Customer Service is ready to assist.</p>
-      <form>
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <textarea placeholder="Describe your concern" rows="4" required></textarea>
-        <button type="submit">Contact Support</button>
       </form>
     </div>
   </section>
